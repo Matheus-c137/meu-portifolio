@@ -17,148 +17,213 @@ body {
     background-image: linear-gradient(90deg, #1E1E1E, #0C1E3B);
     /* border: 1px solid red; */
     color: var(--branco-padrao);
+    overflow-x: hidden;
 }
 
+@media (min-width: 601px) {
 
-.navbar {
-    width: 100vw;
-    /* border: 1px solid red; */
-    margin-top: 1%;
-    padding-bottom: 0.5%;
-    border-bottom: 0.001rem solid var(--branco-padrao);
-}
+    .navbar {
+        width: 100vw;
+        /* border: 1px solid red; */
+        margin-top: 1%;
+        padding-bottom: 0.5%;
+        border-bottom: 0.001rem solid var(--branco-padrao);
+    }
 
-.links-navegacao {
-    display: flex;
-    color: var(--branco-padrao);
-    justify-content: space-around;
-    list-style-type: none;
-}
+    .links-navegacao {
+        display: flex;
+        color: var(--branco-padrao);
+        justify-content: space-around;
+        list-style-type: none;
+    }
 
-.links-navegacao > li {
-    font-size: 1vw;
-    white-space: nowrap;
-    cursor: pointer;
-    color: var(--branco-padrao);
-    margin: auto 0;
-    transition: 0.5s ease;
-}
+    .links-navegacao > li {
+        font-size: 1vw;
+        white-space: nowrap;
+        cursor: pointer;
+        color: var(--branco-padrao);
+        margin: auto 0;
+        transition: 0.5s ease;
+    }
 
-.links-navegacao img {
-    width: 10vw;
-}
+    .links-navegacao img {
+        width: 10vw;
+    }
 
-.links-navegacao > li:hover {
-    text-decoration: underline;
-    font-size: 1.2vw;
-    font-weight: 600;
-}
+    .links-navegacao > li:hover {
+        text-decoration: underline;
+        font-size: 1.2vw;
+        font-weight: 600;
+    }
 
-#btn-contato-menu {
-    width: 12vw;
-    height: 4vh;
-    border-radius: 1.1rem;
-    background-color: transparent;
-    font-size: 1vw;
-    font-weight: 600;
-    color: var(--branco-padrao);
-    border: 0.1rem solid var(--branco-padrao);
-    cursor: pointer;
-    transition: 0.5s ease;
-}
+    #btn-contato-menu {
+        width: 12vw;
+        height: 6vh;
+        border-radius: 1.1rem;
+        background-color: transparent;
+        font-size: 1vw;
+        font-weight: 600;
+        color: var(--branco-padrao);
+        border: 0.1rem solid var(--branco-padrao);
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
 
-#btn-contato-menu:hover {
-    background-image: var(--degrade-padrao);
-    border: none;
-    font-size: 1.2vw;
-    width: 13vw;
-    height: 5vh;
-}
+    #btn-contato-menu:hover {
+        background-image: var(--degrade-padrao);
+        border: none;
+        font-size: 1.2vw;
+        width: 13.5vw;
+        height: 7vh;
+    }
 
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 3vw;
-}
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 3vw;
+    }
 
-.textos * {
-    margin-top: 10px;
+    .textos * {
+        margin-top: 10px;
+        
+    }
+
+    .textos > h1 {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+
+    .textos > h2 {
+        font-size: 1.2vw;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .textos > p {
+        width: 40vw;
+        font-size: 1vw;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    .botoes-principal {
+        display: flex;
+        align-items: center;
+    }
+
+    .botoes-principal * {
+        margin-right: 2vw;
+    }
+
+    .botoes-principal > p {
+        font-size: 1vw;
+    }
+
+    .botoes-principal > input {
+        height: 3vw;
+        width: 15vw;
+        border-radius: 1.1rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--branco-padrao);
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    #btn-entre-em-contato {
+        background-image: var(--degrade-padrao);
+        transition: 0.5s;
+        font-size: 1vw;
+        border: none;
+    }
+
+    #btn-entre-em-contato:hover {
+        height: 3.2vw;
+        width: 16vw;
+        font-size: 1.2vw;
+        
+    }
+
+    #btn-portifolio {
+        border: 0.1vw solid var(--branco-padrao);
+        font-size: 1vw;
+        transition: 0.5s
+    }
+
+    #btn-portifolio:hover {
+        height: 3.2vw;
+        width: 16vw;
+        font-size: 1.2vw;
+        background-image: var(--degrade-padrao);
+        border: none;
+    }
+
+    .imagem > img {
+        width: 50vw;
+    }
+
+    .sessao-servicos {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--branco-padrao);
+        margin: -2vw auto;
+        border-radius: 1.2vw;
+        color: var(--preto-padrao);
+        text-align: center;
+        padding-bottom: 2vw;
+    }
+
+    .titulo-servico-div {
+        margin-top: 2vw;
+    }
     
-}
-
-.textos > h1 {
-    font-size: 4vw;
-    font-weight: 600;
-}
-
-.textos > h2 {
-    font-size: 1.2vw;
-    font-weight: 500;
-    margin: 0;
-}
-
-.textos > p {
-    width: 40vw;
-    font-size: 1vw;
-    font-weight: 300;
-    text-align: justify;
-}
-
-.botoes-principal {
-    display: flex;
-    align-items: center;
-}
-
-.botoes-principal * {
-    margin-right: 2vw;
-}
-
-.botoes-principal > p {
-    font-size: 1vw;
-}
-
-.botoes-principal > input {
-    height: 3vw;
-    width: 15vw;
-    border-radius: 1.1rem;
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--branco-padrao);
-    font-weight: 600;
-    opacity: 1;
-}
-
-#btn-entre-em-contato {
-    background-image: var(--degrade-padrao);
-    transition: 0.5s;
-    font-size: 1vw;
-    border: none;
-}
-
-#btn-entre-em-contato:hover {
-    height: 3.2vw;
-    width: 16vw;
-    font-size: 1.2vw;
+    .sessoes-itens {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 1vw;
+    }
     
-}
+    .item-servico {
+        /* background-color: var(--azul-padrao); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+        width: 300px;
+        height: 300px;
+        flex: 1 1 calc(33.33% - 10px);
+        margin-top: 2vw;
+    }
 
-#btn-portifolio {
-    border: 0.1vw solid var(--branco-padrao);
-    font-size: 1vw;
-    transition: 0.5s
-}
+    .item-servico * {
 
-#btn-portifolio:hover {
-    height: 3.2vw;
-    width: 16vw;
-    font-size: 1.2vw;
-    background-image: var(--degrade-padrao);
-    border: none;
-}
+        margin-bottom: 2vw;
+    }
 
-.imagem > img {
-    width: 50vw;
+    .item-servico img {
+        width: 5vw;
+    }
+
+    .item-servico h2 {
+        font-weight: 400;
+        font-size: 1.5vw;
+    }
+
+    .item-servico p {
+        font-weight: 300;
+        font-size: 0.9vw;
+        width: 70%;
+        text-align: center;
+    }
+
+    .item-servico a {
+        color: var(--azul-padrao);
+        font-size: 0.9vw;
+        font-weight: 500;
+    }
 }
 
 @media (max-width: 600px){
@@ -174,10 +239,12 @@ body {
     .imagem {
         position: relative;
         order: 1;
+        z-index: 1;
     }
 
     .imagem img {
-        width: 120vw;
+        margin: auto;
+        width: 100%;
     }
 
     .textos {
@@ -187,26 +254,27 @@ body {
         order: 2;
         align-items: center;
         margin-top: -25%;
+        z-index: 2;
     }
     
     .textos > h1 {
         font-size: 10vw;
-        margin-top: -3%;
+        margin-top: -7%;
         font-weight: 600;
         text-align: center;
     }
     
     .textos > h2 {
-        font-size: 2vh;
-        margin-top: -8%;
+        font-size: 2.7vh;
         font-weight: 500;
         margin: 0;
     }
     
     .textos > p {
-        width: 75vw;
+        width: 80vw;
         font-size: 1.5vh;
         font-weight: 300;
+        margin: 3vh;
         text-align: center;
     }
 
@@ -215,12 +283,13 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .botoes-principal > p {
         display: none;
     }
     
     .botoes-principal > input {
+        margin-bottom: 2%;
         height: 5vh;
         width: 70vw;
         border-radius: 1.1rem;
@@ -257,5 +326,57 @@ body {
         font-size: 2.5vh;
         background-image: var(--degrade-padrao);
         border: none;
+    }
+
+    .sessao-servicos {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--branco-padrao);
+        margin: 0 auto;
+        border-radius: 2.2vh;
+        color: var(--preto-padrao);
+        text-align: center;
+        padding-bottom: 2vw;
+        margin-top: 5vh;
+    }
+
+    .titulo-servico-div {
+        margin-top: 5vh;
+    }
+    
+    .sessoes-itens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 1vw;
+    }
+    
+    .item-servico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 300px;
+        height: 50vh;
+        margin-top: 5vh;
+    }
+
+    .item-servico img {
+        width: 14vh;
+    }
+
+    .item-servico h2 {
+        font-weight: 400;
+    }
+
+    .item-servico p {
+        font-weight: 300;
+        width: 70%;
+        text-align: center;
+    }
+
+    .item-servico a {
+        color: var(--azul-padrao);
     }
 }

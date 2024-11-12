@@ -1,21 +1,17 @@
 function efeitoblur() {
-    let botaoEntreContato = document.querySelector('#btn-entre-em-contato')
-    let botaoPortifolio = document.querySelector('#btn-portifolio')
-    botaoEntreContato.addEventListener('mouseenter' , () => {
-        botaoPortifolio.style.filter = 'blur(3px)'
-        botaoEntreContato.style.filter = 'blur(0px)'
+    document.querySelector('#btn-entre-em-contato').addEventListener('mouseenter' , () => {
+        document.querySelector('#btn-portifolio').style.filter = 'blur(3px)'
+        document.querySelector('#btn-entre-em-contato').style.filter = 'blur(0px)'
     })
-    botaoEntreContato.addEventListener('mouseleave' , () => {
-        botaoPortifolio.style.filter = 'blur(0px)'
-        allElements.style.filter = 'none'
-        document.querySelector('.textos').style.filter = 'none'
+    document.querySelector('#btn-entre-em-contato').addEventListener('mouseleave' , () => {
+        document.querySelector('#btn-portifolio').style.filter = 'blur(0px)'
     })
-    botaoPortifolio.addEventListener('mouseenter' , () => {
-        botaoEntreContato.style.filter = 'blur(3px)'
-        botaoEntreContato.style.opacity = '0.3'
+    document.querySelector('#btn-portifolio').addEventListener('mouseenter' , () => {
+        document.querySelector('#btn-entre-em-contato').style.filter = 'blur(3px)'
+        document.querySelector('#btn-entre-em-contato').style.opacity = '0.3'
     })
-    botaoPortifolio.addEventListener('mouseleave' , () => {
-        botaoEntreContato.style.filter = 'blur(0px)'
-        botaoEntreContato.style.opacity = '1'
+    document.querySelector('#btn-portifolio').addEventListener('mouseleave' , () => {
+        document.querySelector('#btn-entre-em-contato').style.filter = 'blur(0px)'
+        document.querySelector('#btn-entre-em-contato').style.opacity = '1'
     })
 }
