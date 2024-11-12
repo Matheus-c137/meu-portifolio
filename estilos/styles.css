@@ -188,14 +188,9 @@ body {
         align-items: center;
         margin-top: -25%;
     }
-
-    .textos * {
-        
-        
-    }
     
     .textos > h1 {
-        font-size: 5vh;
+        font-size: 8vw;
         margin-top: -3%;
         font-weight: 600;
         text-align: center;
