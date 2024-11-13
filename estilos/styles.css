@@ -358,11 +358,13 @@ body {
         margin-bottom: 10vh;
     }
 
-    .imagem-sobre-mim {
-        background-color: var(--branco-padrao);
-        width: 400px;
-        height: 500px;
+    .imagem-sobre-mim{
         border-radius: 1vw;
+        width: 40vw;
+        height: 65vh;
+        background-image: url('../images/matheus-hero-section-desktop.webp');
+        background-size: cover;
+        background-position: center;
     }
 
     .textos-sobre-mim {
@@ -645,10 +647,12 @@ body {
     }
 
     .imagem-sobre-mim {
-        background-color: var(--branco-padrao);
         width: 400px;
         height: 60vh;
         border-radius: 1vw;
+        background-image: url('../images/matheus-hero-section-desktop.webp');
+        background-size: cover;
+        background-position: center;
     }
 
     .textos-sobre-mim {
