@@ -24,7 +24,6 @@ body {
 
     .navbar {
         width: 100vw;
-        /* border: 1px solid red; */
         margin-top: 1%;
         padding-bottom: 0.5%;
         border-bottom: 0.001rem solid var(--branco-padrao);
@@ -76,6 +75,8 @@ body {
         width: 13.5vw;
         height: 7vh;
     }
+
+        /* inicio da hero sectio */
 
     .hero-section {
         display: flex;
@@ -163,6 +164,10 @@ body {
         width: 50vw;
     }
 
+    /* fim da hero section */
+
+    /* inicio da sessao serviços */
+
     .sessao-servicos {
         display: flex;
         flex-direction: column;
@@ -175,32 +180,27 @@ body {
     }
 
     .titulo-servico-div {
-        margin-top: 2vw;
+        margin-top: 3vh;
     }
     
     .sessoes-itens {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        margin-top: 1vw;
     }
     
     .item-servico {
-        /* background-color: var(--azul-padrao); */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* border: 1px solid red; */
         width: 300px;
         height: 300px;
         flex: 1 1 calc(33.33% - 10px);
-        margin-top: 2vw;
     }
 
     .item-servico * {
-
-        margin-bottom: 2vw;
+        margin-bottom: 2vh;
     }
 
     .item-servico img {
@@ -223,6 +223,74 @@ body {
         color: var(--azul-padrao);
         font-size: 0.9vw;
         font-weight: 500;
+    }
+
+    .para-quem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vw;
+    }
+    
+    .para-quem-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+        width: 100%;
+        margin: 2vw 0;
+    }
+    
+    .item-para-quem {
+        display: flex;
+        border: 0.2vw solid;
+        border-image: var(--degrade-padrao) 1;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        height: 50vh;
+        margin: 10px 0;
+    }
+
+    .item-para-quem h2 {
+        font-size: 2.7vh;
+        margin-bottom: 0vh;
+        font-weight: 500;
+    }
+
+    .item-para-quem p {
+        font-weight: 300;
+        margin-bottom: 1vh;
+        font-size: 0.9vw;
+        margin-bottom: auto;
+    }
+
+    .item-para-quem img {
+        margin-top: auto;
+        margin-bottom: 10%;
+        width: 7vw;
+    }
+    
+    .btn-entre-em-contato-geral {
+        width: 30%;
+        height: 6.5vh;
+        border-radius: 1vw;
+        background-image: var(--degrade-padrao);
+        border: none;
+        color: var(--branco-padrao);
+        font-size: 1vw;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .btn-entre-em-contato-geral:hover {
+        width: 33vw;
+        height: 7.5vh;
+        font-size: 1.2vw;
+        font-weight: 600;
     }
 }
 
@@ -379,4 +447,55 @@ body {
     .item-servico a {
         color: var(--azul-padrao);
     }
+
+    .para-quem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vw;
+    }
+    
+    .para-quem-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+        width: 100%;
+        margin: 2vw 0;
+    }
+    
+    .item-para-quem {
+        display: flex;
+        border: 0.4vh solid;
+        border-image: var(--degrade-padrao) 1;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        width: 250px;
+        height: 50vh;
+        margin: 10px 0;
+    }
+    
+    .btn-entre-em-contato-geral {
+        width: 70vw;
+        height: 6.5vh;
+        border-radius: 1vw;
+        background-image: var(--degrade-padrao);
+        border: none;
+        color: var(--branco-padrao);
+        font-size: 2.2vh;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .btn-entre-em-contato-geral:hover {
+        width: 80vw;
+        height: 7.5vh;
+        font-size: 2.6vh;
+        font-weight: 600;
+    }
 }
+
