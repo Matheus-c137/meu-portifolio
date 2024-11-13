@@ -13,6 +13,10 @@
     --azul-padrao: #2C5493;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: linear-gradient(90deg, #1E1E1E, #0C1E3B);
     /* border: 1px solid red; */
@@ -43,6 +47,11 @@ body {
         color: var(--branco-padrao);
         margin: auto 0;
         transition: 0.5s ease;
+    }
+
+    .links-navegacao a {
+        color: var(--branco-padrao);
+
     }
 
     .links-navegacao img {
@@ -276,7 +285,7 @@ body {
     .btn-entre-em-contato-geral {
         width: 30%;
         height: 6.5vh;
-        border-radius: 1vw;
+        border-radius: 1.1rem;
         background-image: var(--degrade-padrao);
         border: none;
         color: var(--branco-padrao);
@@ -491,7 +500,7 @@ body {
         transition: 0.5s;
     }
     
-    
+
     .btn-entre-em-contato-geral:hover {
         width: 80vw;
         height: 7.5vh;
