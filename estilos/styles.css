@@ -52,6 +52,7 @@ body {
 
     .links-navegacao a {
         color: var(--branco-padrao);
+        text-decoration: none;
 
     }
 
