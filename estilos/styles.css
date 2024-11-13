@@ -622,7 +622,7 @@ body {
     
     .item-portifolio {
         width: 70vw;
-        height: 50vh;
+        height: 30vh;
         border-radius: 1vw;
         background-color: var(--branco-padrao);
         transition: 0.5s;
