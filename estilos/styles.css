@@ -28,6 +28,7 @@ body {
 
     .navbar {
         width: 100vw;
+        z-index: 9999;
         margin-top: 1%;
         padding-bottom: 0.5%;
         border-bottom: 0.001rem solid var(--branco-padrao);
@@ -301,6 +302,97 @@ body {
         font-size: 1.2vw;
         font-weight: 600;
     }
+
+
+    .portifolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* height: 110vh; */
+    }
+    
+    .portifolio p {
+        margin: 5vh 1%;
+        font-size: 0.9vw;
+    }
+    
+    .sessao-do-portifolio {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .item-portifolio {
+        width: 23vw;
+        height: 40vh;
+        border-radius: 1vw;
+        background-color: var(--branco-padrao);
+        transition: 0.5s;
+        cursor: pointer;
+        opacity: 0.5;
+        filter: blur(2px);
+    }
+    
+    .sessao-do-portifolio:hover .item-portifolio{
+        opacity: 0.3;
+        filter: blur(5px);
+    }
+    
+    .sessao-do-portifolio:hover .item-portifolio:hover{
+        opacity: 1;
+        scale: 1.1;
+        filter: none;
+    }
+
+    #btn-contato-portifolio {
+        margin: 0  auto;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    
+    .sobre-mim-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        margin-bottom: 10vh;
+    }
+
+    .imagem-sobre-mim {
+        background-color: var(--branco-padrao);
+        width: 400px;
+        height: 500px;
+        border-radius: 1vw;
+    }
+
+    .textos-sobre-mim {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5%;
+        width: 35vw;
+        height: 60vh;
+    }
+
+    .textos-sobre-mim p {
+        text-align: justify;
+    }
+
+    .div-botao-sobre-mim{
+        display: flex;
+        gap: 2%;
+        align-items: end;
+    }
+
+    #btn-contato-sobre-mim {
+        width: 20vw;
+    }
+
+    #btn-contato-sobre-mim:hover {
+        width: 22vw;
+    }
+    
 }
 
 @media (max-width: 600px){
@@ -507,5 +599,87 @@ body {
         font-size: 2.6vh;
         font-weight: 600;
     }
-}
 
+    .portifolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* height: 110vh; */
+    }
+    
+    .portifolio p {
+        margin: 5vh 1%;
+        text-align: center;
+        font-size: 2vh;
+    }
+    
+    .sessao-do-portifolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .item-portifolio {
+        width: 70vw;
+        height: 50vh;
+        border-radius: 1vw;
+        background-color: var(--branco-padrao);
+        transition: 0.5s;
+        margin-bottom: 5%;
+        cursor: pointer;
+    }
+
+    #btn-contato-portifolio {
+        margin: 0  auto;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    .sobre-mim-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10vh 0;
+        
+    }
+
+    .imagem-sobre-mim {
+        background-color: var(--branco-padrao);
+        width: 400px;
+        height: 60vh;
+        border-radius: 1vw;
+    }
+
+    .textos-sobre-mim {
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+        margin: o auto;
+        gap: 5%;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .textos-sobre-mim p {
+        font-size: 2vh;
+    }
+
+    .div-botao-sobre-mim{
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-botao-sobre-mim img {
+        display: none;
+    }
+
+    #btn-contato-sobre-mim {
+        margin-top: 5%;
+        width: 70vw;
+    }
+
+    #btn-contato-sobre-mim:hover {
+        width: 80vw;
+    }
+}
