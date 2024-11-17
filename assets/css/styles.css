@@ -290,17 +290,20 @@ header {
 
 @media (max-width: 800px){
     .hero {
-        height: 50vh;
-
+        /* height: 50vh; */
+        /* padding-bottom: 10vh; */
     }
 
     .conteudo {
-        height: 50vh;
+        /* height: 50vh; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         order: 1;
-        position: relative;
+        /* position: relative; */
+        border: 1px solid red;
+        margin-top: -100%;
+        
     }
     .textos h1 {
         font-size: 2.5rem;
@@ -315,7 +318,7 @@ header {
 
     .textos p {
     font-size: 0.6rem;
-    width: 100%;
+    width: 90%;
     }
 
     .botoes button {
@@ -323,20 +326,20 @@ header {
         height: 6vh;
         margin: 2vh 0;
     }
-
+    
     .botoes a {
         font-size: 1.5vw;
     }
-
+    
     .imagens {
-        height: 50vh;
-        width: 40vw;
+        height: 100%;
+        /* width: 40vw; */
         display: flex;
         align-items: start;
         justify-content: center;
         order: 2;
     }
-
+    
     .imagens img {
         height: 100%;
         width: auto;
@@ -360,13 +363,12 @@ header {
     }
 
     .imagens {
-        position: relative;
         order: 1;
         z-index: 1;
     }
 
     .imagens img {
-        width: 95vw;
+        height: 50vh;
         margin-top: -1vh;
     }
 
@@ -408,6 +410,10 @@ header {
     .botoes button {
         width: 80vw;
         margin-bottom: 0;
+    }
+
+    .button-portifolio {
+        margin-bottom: 10vh;
     }
 
     .entre-em-contato a {
