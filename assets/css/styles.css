@@ -388,8 +388,12 @@ header {
     }
 
     .textos h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: -2vh;
+    }
+
+    .textos h2 {
+        font-size: 1.1rem;
     }
 
     .botoes {
