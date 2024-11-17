@@ -407,7 +407,7 @@ header {
 
     .botoes button {
         width: 80vw;
-        margin-bottom: 2vh;
+        margin-bottom: 0;
     }
 
     .entre-em-contato a {
