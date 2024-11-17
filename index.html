@@ -3,193 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/styles2.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>MS Code & Design</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>MS Code & Design </title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <img src="images/icons/hamburguer-menu.png" alt="" onclick="menuMobile()" id="menu-mobile">
     <header>
-        <nav class="navbar">
-            <ul class="links-navegacao">
-                <li><a href="#" class="logo"><img src="images/logomarca-ms-code-&-design.svg" alt="logomarca Ms Code & Design"></a></li>
-                <li><a href="#">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portifolio-section">Portifólio</a></li>
-                <li><a href="#sobre-mim-section">Sobre Mim</a></li>
-                <li><input type="button" value="Contato"></li>
-            </ul>
-        </nav>
-        <nav class="navbar-mobile">
-            <ul class="links-navegacao">
-                <li><a href="#" class="logo"><img src="images/logomarca-ms-code-&-design.svg" alt="logomarca Ms Code & Design"></a></li>
-                <li><a href="#">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portifolio-section">Portifólio</a></li>
-                <li><a href="#sobre-mim-section">Sobre Mim</a></li>
-                <input type="button" value="Contato"></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero-section">
-        <div class="textos">
-            <p>Olá, eu sou</p>
-            <h1 id="nome-principal">Matheus Santos</h1>
-            <h2 id="subtitulo-nome">Designer Gráfico & Web Designer</h2>
-            <p>Especialista em criar sites, peças visuais e materiais que se destacam. Ofereço soluções criativas e completas para dar vida ao seu projeto e fortalecer a presença da sua marca. Vamos criar algo incrível juntos?</p>
-            <div class="botoes-principal">
-                <input type="button" value="Entre em Contato" id="btn-entre-em-contato" onmouseenter="efeitoblur()">
-                <p>|</p>
-                <input type="button" value="Portifólio" id="btn-portifolio" onmouseenter="efeitoblur()">
+        <div class="menu">
+            <div class="div-logo">
+                <img src="assets/images/logomarca-ms-code-&-design.svg" alt="logomarca ms code & design">
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li class="menu-item"><a href="#">Início</a></li>
+                    <li class="menu-item"><a href="#">Serviços</a></li>
+                    <li class="menu-item"><a href="#">Portifólio</a></li>
+                    <li class="menu-item"><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="button-contato">
+                <button><a href="#">Contato</a></button>
+            </div>
+            
+            <button class="icon-menu" onclick="menuHamburguer()"><img id="icone-menu" src="assets/images/menu-branco.svg" alt="icone do menu"></button>
+        </div>
+        <div class="menu-mobile open">
+            <div class="menu-list-mobile">
+                <ul>
+                    <li class="menu-item-mobile"><a href="#">Início</a></li>
+                    <li class="menu-item-mobile"><a href="#">Serviços</a></li>
+                    <li class="menu-item-mobile"><a href="#">Portifólio</a></li>
+                    <li class="menu-item-mobile"><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="button-contato-mobile">
+                <button><a href="#">Contato</a></button>
             </div>
         </div>
-        <div class="imagem">
-            <img src="images/matheus-hero-section-desktop.webp" alt="imagem de matheus santos">
+    </header>
+    
+    <section class="hero">
+        <div class="conteudo">
+            <div class="textos">
+                <p class="p-apresentacao">Olá, eu sou</p>
+                <h1>Matheus Santos</h1>
+                <h2>Graphic & Web Designer</h2>
+                <p>Especialista em criar sites, peças visuais e materiais que se destacam. Ofereço soluções criativas e completas para dar vida ao seu projeto e fortalecer a presença da sua marca. Vamos criar algo incrível juntos?</p>
+            </div>
+
+            <div class="botoes">
+                <button class="entre-em-contato"><a href="#">Entre em Contato</a></button>
+                <p>|</p>
+                <button class="button-portifolio"><a href="#">Portifólio</a></button>
+            </div>
+        </div>
+
+        <div class="imagens">
+            <img src="assets/images/matheus-hero-section-desktop.webp" alt="Matheus Santos imagem">
+        </div> 
+    </section>
+
+    <section class="meus-servicos">
+        <p>Serviços</p>
+
+        <div class="servicos">
+            <div class="servico-item">
+                <img src="assets/images/icon-design-preto.svg" alt="icone que representa o serviço de design gráfico" class="icon-servico">
+                <h2>Design Visual Personalizado</h2>
+                <p>Criação de peças visuais com design profissional e impactante.</p>
+                <a href="">Saiba mais ></a>
+            </div>
+
+            <div class="servico-item">
+                <img src="assets/images/icon-site-preto.svg" alt="icone que representa o serviço de criação de sites responsivos" class="icon-servico">
+                <h2>Criação de Sites Responsivos</h2>
+                <p>Desenvolvimento de sites modernos e funcionais para potencializar sua presença online.</p>
+                <a href="">Saiba mais ></a>
+            </div>
+
+            <div class="servico-item">
+                <img src="assets/images/icon-idv-preto.svg" alt="icone que respresenta o serviço de criação de identidade visual" class="icon-servico">
+                <h2>Criação de Identidade Visual</h2>
+                <p>Desenvolvimento de logotipos e elementos que refletem a essência da sua marca.</p>
+                <a href="">Saiba mais ></a>
+            </div>
+            
+            <div class="servico-item">
+                <img src="assets/images/icon-hospegadem-preto.svg" alt="icone que representa o serviço de Hospedagem de sites" class="icon-servico">
+                <h2>Hospedagem de Sites</h2>
+                <p>Desenvolvimento de sites modernos e funcionais para potencializar sua presença online.</p>
+                <a href="">Saiba mais ></a>
+            </div>
+
+            <div class="servico-item">
+                <img src="assets/images/icon-dominio-preto.svg" alt="icone que representa o serviço de registro de domínio" class="icon-servico">
+                <h2>Registro de Domínio</h2>
+                <p>Auxílio completo para garantir o domínio perfeito para seu negócio.</p>
+                <a href="">Saiba mais ></a>
+            </div>
+
+            <div class="servico-item">
+                <img src="assets/images/icon-seo-preto.svg" alt="icone que representa o serviço de otimização de SEO" class="icon-servico">
+                <h2>Otimização de SEO</h2>
+                <p>Ajustes para melhorar o ranqueamento e visibilidade do seu site nos mecanismos de busca.</p>
+                <a href="">Saiba mais ></a>
+            </div>
         </div>
     </section>
 
-    <section class="sessao-servicos" id="servicos">
-        <p class="titulo-servico-div">Serviços</p>
-        <div class="sessoes-itens">
-            <div class="item-servico">
-                <img src="images/icons/icon-design-preto.svg" alt="">
-                <h2 class="titulo-servico">Design Visual Personalizado</h2>
-                <p class="descricao-servico">Criação de peças visuais com design profissional e impactante.</p>
-                <a href="#" class="link-saiba-mais-servico">Saiba mais ></a>
-            </div>
+    <section class="portifolio">
+        <p>Portifólio</p>
 
-            <div class="item-servico">
-                <img src="images/icons/icon-site-preto.svg" alt="">
-                <h2 class="titulo-servico">Criação de Sites Responsivos</h2>
-                <p class="descricao-servico">Desenvolvimento de sites modernos e funcionais para potencializar sua presença online.</p>
-                <a href="#" class="link-saiba-mais-servico">Saiba mais ></a>
+        <div class="container-portifolio">
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
             </div>
-
-            <div class="item-servico">
-                <img src="images/icons/icon-idv-preto.svg" alt="">
-                <h2 class="titulo-servico">Criação de Identidade Visual</h2>
-                <p class="descricao-servico">Desenvolvimento de logotipos e elementos que refletem a essência da sua marca.</p>
-                <a href="#" class="link-saiba-mais-servico">Saiba mais ></a>
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
+            </div>
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
+            </div>
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
+            </div>
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
+            </div>
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
+            </div>
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
+            </div>
+            <div class="item-portifolio">
+                <img src="https://res.cloudinary.com/printstore/image/upload/c_thumb,f_auto,g_auto,h_450,q_auto,w_800/import%C3%A2ncia-da-identidade-visual.png?_a=BAMADKTE0" alt="">
+                <div class="textos-item-portifolio">
+                    <h2>Nome do Projeto</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <a href="">Saiba mais ></a>
+                </div>
             </div>
             
-            <div class="item-servico">
-                <img src="images/icons/icon-hospegadem-preto.svg" alt="">
-                <h2 class="titulo-servico">Hospedagem de sites</h2>
-                <p class="descricao-servico">Desenvolvimento de sites modernos e funcionais para potencializar sua presença online.</p>
-                <a href="#" class="link-saiba-mais-servico">Saiba mais ></a>
-            </div>
-
-            <div class="item-servico">
-                <img src="images/icons/icon-dominio-preto.svg" alt="">
-                <h2 class="titulo-servico">Registro de Domínio</h2>
-                <p class="descricao-servico">Auxílio completo para garantir o domínio perfeito para seu negócio.</p>
-                <a href="#" class="link-saiba-mais-servico">Saiba mais ></a>
-            </div>
-
-            <div class="item-servico">
-                <img src="images/icons/icon-seo-preto.svg" alt="">
-                <h2 class="titulo-servico">Otimização de SEO</h2>
-                <p class="descricao-servico">Ajustes para melhorar o ranqueamento e visibilidade do seu site nos mecanismos de busca.</p>
-                <a href="#" class="link-saiba-mais-servico">Saiba mais ></a>
-            </div>
         </div>
     </section>
 
     <section class="para-quem">
-        <p>Para quem é destinado meus serviços:</p>
+        <p>Pra quem é destinado meus serviços:</p>
 
-        <div class="para-quem-items">
-            <div class="item-para-quem" id="div-site">
-                <img src="images/icons/icon-site-branco.svg" alt="">
+        <div class="container-para-quem">
+            <div class="item-para-quem">
+                <img src="assets/images/icon-site-branco.svg" alt="icone de site responsivo">
                 <h2>Para você que:</h2>
                 <p>Ainda não possui um site e deseja estabelecer sua presença online.</p>
             </div>
-
-            <div class="item-para-quem" id="div-design">
-                <img src="images/icons/icon-design-branco.svg" alt="">
+            <div class="item-para-quem">
+                <img src="assets/images/icon-design-branco.svg" alt="icone de design gráfico">
                 <h2>Para você que:</h2>
-                <p>precisa de soluções criativas e profissionais para fortalecer sua imagem visual.</p>
+                <p>Precisa de soluções criativas e profissionais para fortalecer sua imagem visual.</p>
             </div>
-
-            <div class="item-para-quem" id="div-seo">
-                <img src="images/icons/icon-seo-branco.svg" alt="">
+            <div class="item-para-quem">
+                <img src="assets/images/icon-seo-branco.svg" alt="icone de SEO">
                 <h2>Para você que:</h2>
-                <p> quer melhorar o design e a funcionalidade do seu site atual.</p>
+                <p>Quer melhorar o design e a funcionalidade do seu site atual.</p>
             </div>
-
-            <div class="item-para-quem" id="div-idv">
-                <img src="images/icons/icon-idv-branco.svg" alt="">
+            <div class="item-para-quem">
+                <img src="assets/images/icon-idv-branco.svg" alt="icone de identidade visual">
                 <h2>Para você que:</h2>
-                <p>busca tornar sua marca mais impactante e reconhecível no ambiente digital e físico.</p>
+                <p>Busca tornar sua marca mais impactante e reconhecível no ambiente digital e físico.</p>
             </div>
-
         </div>
 
-        <input type="button" value="Entre em contato" class="btn-entre-em-contato-geral">
+        <button class="btn-para-quem"><a href="#">Entre em contato</a></button>
     </section>
 
-    <section class="portifolio" id="portifolio-section">
-        <p>Landing Pages & Sites Institucionais</p>
-        <section class="sessao-do-portifolio">
-
-            <div class="item-portifolio">
-
+    <section class="sobre">
+        <div class="container-sobre">
+            <div class="imagem-sobre">
+                <img src="assets/images/matheus-hero-section-desktop.webp" alt="imagem de matheus santos">
             </div>
 
-            <div class="item-portifolio">
-
-            </div>
-
-            <div class="item-portifolio">
-
-            </div>
-
-            <div class="item-portifolio">
-
-            </div>
-
-        </section>
-
-        <p>Designs em geral</p>
-        <section class="sessao-do-portifolio">
-
-            <div class="item-portifolio">
-
-            </div>
-
-            <div class="item-portifolio">
-
-            </div>
-
-            <div class="item-portifolio">
-
-            </div>
-
-            <div class="item-portifolio">
-
-            </div>
-
-        </section>
-        <input type="button" value="Entre em contato" class="btn-entre-em-contato-geral" id="btn-contato-portifolio">
-    </section>
-    
-    <section class="sobre-mim-section" id="sobre-mim-section">
-        <div class="imagem-sobre-mim"></div>
-        <div class="textos-sobre-mim">
-            <p>Sobre mim</p>
-            <h2>Matheus Santos</h2>
-            <p>Tenho 22 anos, sou designer gráfico e web designer, especializado na criação de sites, materiais gráficos e identidades visuais que destacam marcas e negócios. Busco unir estética e funcionalidade para fortalecer a presença dos meus clientes no ambiente online e físico.
-            <br><br>
-            Como estudante de Análise e Desenvolvimento de Sistemas, estou sempre aprimorando meus conhecimentos em tecnologia e design, trazendo inovação e qualidade a cada projeto. Vamos juntos transformar suas ideias em realidade!</p>
-            <div class="div-botao-sobre-mim">
-                <input type="button" value="Conte Comigo" class="btn-entre-em-contato-geral" id="btn-contato-sobre-mim">
-                <a href=""><img src="images/icons/instagram-icon.svg" alt="" class="icones-redes-sociais"></a>
-                <a href=""><img src="images/icons/linkedin-icon.svg" alt="" class="icones-redes-sociais"></a>
-                <a href=""><img src="images/icons/behance-icon.svg" alt="" class="icones-redes-sociais"></a>
+            <div class="textos-sobre">
+                <p>Sobre mim</p>
+                <h2>Matheus Santos</h2>
+                <p>Tenho 22 anos, sou designer gráfico e web designer, especializado na criação de sites, materiais gráficos e identidades visuais que destacam marcas e negócios. Busco unir estética e funcionalidade para fortalecer a presença dos meus clientes no ambiente online e físico.
+                <br> <br>
+                Como estudante de Análise e Desenvolvimento de Sistemas, estou sempre aprimorando meus conhecimentos em tecnologia e design, trazendo inovação e qualidade a cada projeto. Vamos juntos transformar suas ideias em realidade!</p>
+                <div class="botoes-de-acao-sobre">
+                    <button>Contratar</button>
+                    <a href=""><img src="assets/images/instagram-icon.svg" alt="" class="icons-redes-sociais"></a>
+                    <a href=""><img src="assets/images/linkedin-icon.svg" alt="" class="icons-redes-sociais"></a>
+                    <a href=""><img src="assets/images/behance-icon.svg" alt="" class="icons-redes-sociais"></a>
+                </div>
             </div>
         </div>
     </section>
-    <script src="main2.js"></script>
+
+    <section class="FAQ">
+        <h2>Perguntas Frequentes</h2>
+        <div class="container-faq">
+            <details>
+                <summary class="titulo-pergunta">Qual o valor para contratar seus serviços?</summary>
+                <p class="resposta">O valor dos meus serviços varia de acordo com a complexidade e as necessidades específicas de cada projeto. <br>Trabalho com soluções personalizadas para garantir que você receba exatamente o que precisa. Entre em contato para solicitar um orçamento detalhado, sem compromisso.</p>
+            </details>
+
+            <details>
+                <summary class="titulo-pergunta">Qual o prazo pra entrega de um projeto?</summary>
+                <p class="resposta">O prazo de entrega depende do tipo e da complexidade do projeto. Para projetos simples, o prazo pode ser de poucos dias. <br>Já projetos mais elaborados podem levar mais tempo, mas sempre informo e concordo com você sobre os prazos antes de começarmos. Minha prioridade é a qualidade e a pontualidade.</p>
+            </details>
+
+            <details>
+                <summary class="titulo-pergunta">Sobre o site, preciso ter domínio e hospedagem?</summary>
+                <p class="resposta">Não é essencial que você já tenha um domínio e uma hospedagem antes de começar, mas eles são indispensáveis para que o site fique acessível na internet. <br> Caso ainda não tenha, posso ajudar na contratação e configuração das melhores opções para o seu projeto. <br>Porém, se você já tiver esses recursos, melhor ainda, e cuidarei para integrá-los ao site sem problemas.</p>
+            </details>
+
+            <details>
+                <summary class="titulo-pergunta">Sobre o site, tenho direito a manutenção?</summary>
+                <p class="resposta">Sim, ofereço serviços de manutenção para garantir que seu site esteja sempre atualizado, seguro e funcionando perfeitamente. <br>Essa manutenção é cobrada à parte, e você pode escolher entre planos personalizados que atendam às suas necessidades, como atualizações de conteúdo, suporte técnico e melhorias contínuas.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>MS Code & Design | Matheus Santos</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
