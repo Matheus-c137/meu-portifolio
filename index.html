@@ -16,9 +16,9 @@
             <div class="menu-list">
                 <ul>
                     <li class="menu-item"><a href="#">Início</a></li>
-                    <li class="menu-item"><a href="#">Serviços</a></li>
-                    <li class="menu-item"><a href="#">Portifólio</a></li>
-                    <li class="menu-item"><a href="#">Sobre</a></li>
+                    <li class="menu-item"><a href="#serviços">Serviços</a></li>
+                    <li class="menu-item"><a href="#portifolio">Portifólio</a></li>
+                    <li class="menu-item"><a href="#sobre">Sobre</a></li>
                 </ul>
             </div>
             <div class="button-contato">
@@ -30,10 +30,10 @@
         <div class="menu-mobile open">
             <div class="menu-list-mobile">
                 <ul>
-                    <li class="menu-item-mobile"><a href="#">Início</a></li>
-                    <li class="menu-item-mobile"><a href="#">Serviços</a></li>
-                    <li class="menu-item-mobile"><a href="#">Portifólio</a></li>
-                    <li class="menu-item-mobile"><a href="#">Sobre</a></li>
+                    <li class="menu-item-mobile"><a href="#" onclick="menuHamburguer()">Início</a></li>
+                    <li class="menu-item-mobile"><a href="#serviços" onclick="menuHamburguer()">Serviços</a></li>
+                    <li class="menu-item-mobile"><a href="#portifolio" onclick="menuHamburguer()">Portifólio</a></li>
+                    <li class="menu-item-mobile"><a href="#sobre" onclick="menuHamburguer()">Sobre</a></li>
                 </ul>
             </div>
             <div class="button-contato-mobile">
@@ -42,7 +42,7 @@
         </div>
     </header>
     
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="conteudo">
             <div class="textos">
                 <p class="p-apresentacao">Olá, eu sou</p>
@@ -62,7 +62,7 @@
         </div> 
     </section>
 
-    <section class="meus-servicos">
+    <section class="meus-servicos" id="serviços">
         <p>Serviços</p>
 
         <div class="servicos">
@@ -110,7 +110,7 @@
         </div>
     </section>
 
-    <section class="portifolio">
+    <section class="portifolio" id="portifolio">
         <p>Portifólio</p>
 
         <div class="container-portifolio">
@@ -211,7 +211,7 @@
         <button class="btn-para-quem"><a href="#">Entre em contato</a></button>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="container-sobre">
             <div class="imagem-sobre">
                 <img src="assets/images/matheus-hero-section-desktop.webp" alt="imagem de matheus santos">

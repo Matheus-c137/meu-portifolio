@@ -13,6 +13,7 @@
     }
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -511,9 +512,8 @@ header {
 
 .portifolio p {
     color: var(--branco-padrao);
-    font-size: 100%;
+    font-size: 1rem;
     font-weight: 300;
-    margin-top: 5vh;
 }
 
 .container-portifolio {
@@ -543,12 +543,13 @@ header {
 .textos-item-portifolio {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    padding: 2vw 2vw 2vw 0;
+    padding: 2vh 1vw;
 }
 
 .item-portifolio h2, p, a {
-    margin-left: 5%;
+    text-align: center;
     margin-bottom: 2%;
 }
 
@@ -576,13 +577,13 @@ header {
     
     .textos-item-portifolio {
         justify-content: space-between;
-        height: 45%;
 
     }
     
-    .textos-item-portifolio p {
+    .textos-item-portifolio > p, h2 , a {
         margin: 0;
-        padding-left: 5%;
+        margin-bottom: 2vh;
+        text-align: center;
     }
 }
 
@@ -593,13 +594,14 @@ header {
         flex-wrap: wrap;
     }
     .item-portifolio {
-        width: 70vw;
+        width: 90vw;
         height: 50vh;
         justify-content: space-between;
     }
 
     .item-portifolio h2, p, a {
         margin-bottom: 0;
+        text-align: center !important;
     }
     
     .textos-item-portifolio {
@@ -646,19 +648,21 @@ header {
     .item-para-quem {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1%;
         width: 23vw;
-        height: 50vh;
-        padding: 1vh 1vw;
+        padding: 5vh 2vw;
+        justify-content: center;
         border: 0.2vw solid var(--branco-padrao);
         border-radius: 1rem;
         margin-bottom: 10vh;
     }
     
+    .item-para-quem * {
+        margin: 0;
+    }
+    
     .item-para-quem img {
         height: 10vh;
+        margin-top: 5vh;
     }
     
     .item-para-quem h2 {
