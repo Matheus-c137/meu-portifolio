@@ -345,22 +345,48 @@ header {
     .hero {
         display: flex;
         flex-direction: column;
-        height: 90vh;
-        width: 100vw;
         background-image: none;
+        width: auto;
+        height: 90vh;
+        margin: 0 auto;
+        /* border: 1px solid red; */
     }
 
     .conteudo {
         display: flex;
+        width: auto;
         flex-direction: column;
         align-items: center;
         order: 2;
         z-index: 2;
-        margin-top: -5vh;
+        position: relative;
+        margin-top: -10vh;
     }
 
+    .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos h1, h2, p {
+        text-align: center !important;
+        width: 80vw;
+    }
+
+    .textos h1 {
+        font-size: 1.7rem;
+    }
+
+    .textos h2 {
+        font-size: 1rem;
+    }
+    
     .imagens {
-        display: block;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
         order: 1;
         z-index: 1;
     }
@@ -368,61 +394,22 @@ header {
     .imagens img {
         height: 50vh;
         width: auto;
-        margin-top: -1vh;
-    }
-
-    .textos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: -10vh;
-        margin-bottom: 1vh;
-        width: 90vw;
-    }
-
-    .textos p, h1 {
-        text-align: center;
-    }
-
-    .textos p {
-        font-size: 2vh;
-        text-align: center;
-    }
-
-    .textos h1 {
-        font-size: 2rem;
-        margin-top: -2vh;
-    }
-
-    .textos h2 {
-        font-size: 1.1rem;
     }
 
     .botoes {
-        display: flex;
         flex-direction: column;
-    }
-
-    .botoes p {
-        display: none;
     }
 
     .botoes button {
         width: 80vw;
-        margin-bottom: 0;
+        height: 7vh;
     }
 
-    .button-portifolio {
-        margin-bottom: 10vh;
+    .botoes a {
+        font-size: 1rem;
     }
 
-    .entre-em-contato a {
-        font-size: 2.3vh;
-    }
-
-    .button-portifolio a{
-        font-size: 2.3vh;
-    }
+    
 
 }
 
