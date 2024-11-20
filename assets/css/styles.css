@@ -381,6 +381,10 @@ header {
     .textos h2 {
         font-size: 1rem;
     }
+
+    .textos p {
+        font-size: 0.75rem;
+    }
     
     .imagens {
         display: flex;
@@ -398,11 +402,13 @@ header {
 
     .botoes {
         flex-direction: column;
+
     }
 
     .botoes button {
         width: 80vw;
         height: 7vh;
+        margin-top: 0 !important;
     }
 
     .botoes a {
