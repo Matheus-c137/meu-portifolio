@@ -18,7 +18,6 @@ html {
 body {
     background-image: linear-gradient(90deg, #1E1E1E, #0C1E3B);
     font-family: Poppins, sans-serif;
-    /* overflow-x: hidden; */
 }
 
 /* Início do menu */
@@ -369,8 +368,7 @@ header {
     .imagens img {
         height: 50vh;
         width: auto;
-
-        /* margin-top: -1vh; */
+        margin-top: -1vh;
     }
 
     .textos {
