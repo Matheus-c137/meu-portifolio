@@ -1,23 +1,44 @@
-.informativos {
-    border: 1px solid red;
-    height: 70vh;
-}
-
 .site {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
     gap: 2vw;
 }
 
-.site div {
-    border: 1px solid blue;
+.site .conteudo {
     width: 40vw;
+
+    ul {
+        list-style: none;
+
+        li {
+            h3 {
+                color: #fff;
+                margin-top: 2vh;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+
+            p {
+                text-align: justify;
+                margin-top: 1vh;
+                font-size: 0.8rem;
+                font-weight: 300;
+                color:  rgb(171, 169, 169);
+                width: 80%;
+            }
+        }
+    }
 }
 
 .site .imagem {
-    background-image: url("../images/matheus-hero-section-desktop.webp");
-    height: 100%;
-    background-position: center center;
+    display: flex;
+    align-items: center;
+    width: 40vw;
 }
+
+.site .imagem img {
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
