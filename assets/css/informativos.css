@@ -1,0 +1,23 @@
+.informativos {
+    border: 1px solid red;
+    height: 70vh;
+}
+
+.site {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    gap: 2vw;
+}
+
+.site div {
+    border: 1px solid blue;
+    width: 40vw;
+}
+
+.site .imagem {
+    background-image: url("../images/matheus-hero-section-desktop.webp");
+    height: 100%;
+    background-position: center center;
+}

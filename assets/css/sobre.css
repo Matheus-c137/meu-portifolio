@@ -1,0 +1,125 @@
+.textos-sobre p {
+    color: rgb(171, 169, 169) !important;
+}
+
+@media screen {
+    .container-sobre {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 7vh 0 5vh 0;
+    }
+    
+    .imagem-sobre {
+        display: flex;
+        width: 40vw;
+        height: 60vh;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem-sobre img {
+        height: 100%;
+
+    }
+
+    .textos-sobre {
+        width: 40vw;
+    }
+
+    .textos-sobre p, h2 {
+        color: var(--branco-padrao);
+        margin-left: 0;
+    }
+
+    .textos-sobre h2 {
+        margin-bottom: 2vh;
+        font-size: 2.5rem;
+    }
+
+    .textos-sobre p {
+        font-weight: 300;
+        text-align: start;
+    }
+
+    .botoes-de-acao-sobre {
+        display: flex;
+        align-items: center;
+        margin-top: 3vh;
+    }
+
+    .botoes-de-acao-sobre button {
+        width: 60%;
+        height: 7vh;
+        border-radius: 1rem;
+        border: none;
+        background-image: var(--degrade-padrao);
+        color: var(--branco-padrao);
+        font-size: 1.3rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .botoes-de-acao-sobre button:hover {
+        scale: 1.1;
+    }
+
+    .botoes-de-acao-sobre a {
+        transition: 0.5s;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 0.5vw;
+    }
+
+    .botoes-de-acao-sobre a:hover {
+        scale: 1.2;
+    }
+
+    .links-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-sobre {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .textos-sobre {
+        width: 80vw;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textos-sobre p, h2 {
+        text-align: center;
+    }
+
+    .textos-sobre h2 {
+        font-size: 1.9rem;
+    }
+
+    .botoes-de-acao-sobre {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .botoes-de-acao-sobre button {
+        width: 60vw;
+    }
+
+    .botoes-de-acao-sobre a {
+        display: none;
+    }
+
+}

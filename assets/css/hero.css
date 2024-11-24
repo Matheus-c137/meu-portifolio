@@ -1,0 +1,207 @@
+.textos p {
+    color: rgb(171, 169, 169) !important;
+}
+
+
+@media screen {
+    .hero {
+        display: flex;
+            justify-content: space-around;
+            margin: 0 3vw;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .textos  p{
+            font-weight: 300;
+            margin-bottom: 2vh;
+            margin-left: 0;
+            font-size: 0.9vw;
+            width: 80%;
+            text-align: justify;
+        }
+        
+        .textos h1 {
+            color: var(--branco-padrao);
+            font-size: 3.5rem;
+            margin-bottom: -1vh;
+            margin-top: -2vh;
+        }
+        
+        .textos h2 {
+            color: var(--branco-padrao);
+            font-size: 3vh;
+            font-weight: 400;
+            margin: 1vh 0;
+        }
+        
+        .botoes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5%;
+            width: 80%;
+        }
+        
+        
+        .botoes button {
+            height: 7vh;
+            width: 20vw;
+            border-radius: 1rem;
+            background-color: transparent;
+            border: 0.2vw solid var(--branco-padrao);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .botoes button:hover {
+            scale: 1.1;
+        }
+        
+        button.entre-em-contato{
+            background-image: var(--degrade-padrao);
+            border: none;
+        }
+        
+        .botoes a {
+            color: var(--branco-padrao);
+            font-size: 1.2vw;
+            text-decoration: none;
+        }
+        
+        .imagens img {
+            width: 40vw;
+        }
+        
+            
+}
+
+@media (max-width: 800px){
+    .hero {
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background-image: url('../images/matheus-hero-section-desktop.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 60%;
+        background-position: 40vw center;
+    }
+
+    .conteudo {
+        width: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .textos h1 {
+        font-size: 2.5rem;
+    }
+
+    .textos h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-top: 0;
+        text-align: start;
+    }
+
+    .textos p {
+    font-size: 0.6rem;
+    width: 90%;
+    }
+
+    .botoes button {
+        width: 20vw;
+        height: 6vh;
+        margin: 2vh 0;
+    }
+    
+    .botoes a {
+        font-size: 1.5vw;
+    }
+    
+    .imagens {
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .hero {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        width: auto;
+        height: 90vh;
+        margin: 0 auto;
+    }
+
+    .conteudo {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+        z-index: 2;
+        position: relative;
+        margin-top: -10vh;
+    }
+
+    .textos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos h1, h2, p {
+        text-align: center !important;
+        width: 80vw;
+    }
+
+    .textos h1 {
+        font-size: 1.7rem;
+    }
+
+    .textos h2 {
+        font-size: 1rem;
+    }
+
+    .textos p {
+        font-size: 0.75rem;
+    }
+    
+    .imagens {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        order: 1;
+        z-index: 1;
+    }
+
+    .imagens img {
+        height: 50vh;
+        width: auto;
+    }
+
+    .botoes {
+        flex-direction: column;
+
+    }
+
+    .botoes button {
+        width: 80vw;
+        height: 7vh;
+        margin-top: 0 !important;
+    }
+
+    .botoes a {
+        font-size: 1rem;
+    }
+
+    
+
+}

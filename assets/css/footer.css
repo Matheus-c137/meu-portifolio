@@ -1,0 +1,7 @@
+footer p {
+    text-align: center;
+    color: var(--branco-padrao);
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 10vh auto;
+}
