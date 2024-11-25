@@ -16,6 +16,12 @@
         align-items: center;
     }
 
+    .container-faq p {
+        text-align: justify;
+        color: rgb(171, 169, 169);
+        font-weight: 300;
+    }
+
     .container-faq details {
         margin-bottom: 3vh;
         width: 80vw;
@@ -35,7 +41,7 @@
     .titulo-pergunta::before {
         content: '>';
         transform: rotate(90deg);
-        margin: 0 1vw; 
+        margin: 0 1vw;
         font-size: 2rem;
     }
 
@@ -45,15 +51,19 @@
 
     .resposta {
         color: var(--branco-padrao);
-        margin: -1vh  0;
+        margin: -1vh 0;
         padding: 3vh 2vw;
     }
 }
 
 @media (max-width: 500px) {
+    .container-faq details {
+        width: 90vw;
+    }
+
     .titulo-pergunta {
         font-size: 0.8rem;
-        width: 95%;
+        width: 100%;
     }
 
     .titulo-pergunta::before {

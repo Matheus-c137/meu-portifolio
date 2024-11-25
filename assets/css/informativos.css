@@ -10,7 +10,11 @@
         border-bottom: 1px solid gray;
         
         .conteudo {
-            width: 35vw;
+            width: 40vw;
+
+            h2 {
+                font-size: 1.5rem;
+            }
 
             Ul {
                 list-style: none;
@@ -22,9 +26,10 @@
                 }
 
                 p {
-                    text-align: start;
+                    text-align: justify;
                     color:  rgb(171, 169, 169);
                     font-weight: 300;
+                    font-size: 0.9rem;
                 }
             }
         }
