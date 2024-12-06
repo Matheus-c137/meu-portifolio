@@ -9,3 +9,15 @@ function menuHamburguer() {
         document.querySelector('#icone-menu').src ='assets/images/fechar-menu-branco.svg'
     }
 }
+
+function abrirPop() {
+    let janela = document.querySelector(".janela-pop")
+
+    janela.style.display = 'flex'
+}
+
+function fecharPop() {
+    let janela = document.querySelector(".janela-pop")
+
+    janela.style.display = 'none'
+}
