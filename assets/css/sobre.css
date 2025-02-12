@@ -123,3 +123,21 @@
     }
 
 }
+
+#btn-contato {
+    color: white;
+    width: 20vw;
+    height: 7vh;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    background-image: var(--degrade-padrao);
+
+    border-radius: 1rem;
+}
