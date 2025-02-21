@@ -1,23 +1,11 @@
-function menuHamburguer() {
-    let menuListMobile = document.querySelector('.menu-mobile')
-    if (menuListMobile.classList.contains('menu-mobile-ativado')) {
-        menuListMobile.classList.remove('menu-mobile-ativado')
-        document.querySelector('#icone-menu').src = 'assets/images/menu-branco.svg'
-    } else {
-        menuListMobile.classList.add('menu-mobile-ativado')
-        menuListMobile.style.backgroundImage = 'linear-gradient(90deg, #1E1E1E, #0C1E3B)'
-        document.querySelector('#icone-menu').src ='assets/images/fechar-menu-branco.svg'
-    }
-}
+const carousel = document.getElementById("carousel");
+        let index = 0;
+        const totalImages = 10; // Quantidade total de imagens
+        const visibleImages = 5; // Quantidade visível ao mesmo tempo
 
-function abrirPop() {
-    let janela = document.querySelector(".janela-pop")
+        function moveSlide() {
+            index = (index + visibleImages) % totalImages;
+            carousel.style.transform = `translateX(-${index * 20}%)`; // 20% porque 5 imagens ocupam 100%
+        }
 
-    janela.style.display = 'flex'
-}
-
-function fecharPop() {
-    let janela = document.querySelector(".janela-pop")
-
-    janela.style.display = 'none'
-}
+        setInterval(moveSlide, 4000); // Muda a cada 3 segundos
